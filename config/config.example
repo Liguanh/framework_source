@@ -1,0 +1,15 @@
+<?php
+
+return [
+
+    'database' => array(
+        'driver' => 'mysql',
+        'db_name' => 'jiudouyu_core_db',
+        'host' => 'localhost',
+        'username' => 'root',
+        'password' => '1234',
+        'charset' => 'utf8',
+        'port' => 3306,
+        'logging' => true,
+    )
+];
