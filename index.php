@@ -10,6 +10,7 @@
 define('DIR', dirname(__FILE__));
 define('STORAGE_PATH', dirname(__FILE__)."/storages");
 
+
 require_once __DIR__.'/vendor/autoload.php';
 
 require DIR.'/app/autoload.php';

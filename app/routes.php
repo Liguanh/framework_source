@@ -10,14 +10,10 @@ $router = new \Klein\Klein();
 
 
 $router->get('/home', 'App\Controller\IndexController::index');
-$router->get('/register', 'App\Controller\IndexController::index');
 
-$router->get('/404', function(){
-
-});
-
+$router->get('/404', 'App\Controller\ErrorController::error');
 if(!in_array($_SERVER['REQUEST_URI'], $router->paths())) {
-    throw new OutOfBoundsException('No such route with name: '. $_SERVER['REQUEST_URI']);
+    return header('Location:/404');
 }
 
 $router->dispatch();

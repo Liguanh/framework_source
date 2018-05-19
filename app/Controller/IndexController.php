@@ -7,10 +7,6 @@
  */
 namespace App\Controller;
 
-use App\Model\Model;
-use Klein\Request;
-use Klein\Klein;
-
 class IndexController extends Controller
 {
 
